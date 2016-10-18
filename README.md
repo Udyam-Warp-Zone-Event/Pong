@@ -1,6 +1,6 @@
 # Pong
 
-![](https://github.com/Udyam-Warp-Zone-Event/Pong/raw/screenshot.png)
+![](https://github.com/Udyam-Warp-Zone-Event/Pong/blob/master/screenshot.png)
 
 ### Description:
 A simple 2D Ping Pong game 
