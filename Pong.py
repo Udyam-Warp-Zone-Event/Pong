@@ -8,7 +8,7 @@ from pygame.locals import *
 
 pygame.init()
 
-FPS = 40
+FPS = 60
 scr_size = (width,height) = (600,400)
 
 clock = pygame.time.Clock()
@@ -24,9 +24,9 @@ def displaytext(text,fontsize,x,y,color):
 
 def cpumove(cpu,ball):
     if ball.movement[0] > 0:
-        if ball.rect.bottom > cpu.rect.bottom:
+        if ball.rect.bottom > cpu.rect.bottom + cpu.rect.height/5:
             cpu.movement[1] = 8
-        elif ball.rect.top < cpu.rect.top:
+        elif ball.rect.top < cpu.rect.top - cpu.rect.height/5:
             cpu.movement[1] = -8
         else:
             cpu.movement[1] = 0
