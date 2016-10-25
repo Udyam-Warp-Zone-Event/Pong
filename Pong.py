@@ -132,7 +132,7 @@ class Ball(pygame.sprite.Sprite):
         self.image = pygame.Surface((size,size),pygame.SRCALPHA,32)
         self.image = self.image.convert_alpha()
         self.rect = self.image.get_rect()
-        pygame.draw.circle(self.image,self.color,(self.rect.width/2,self.rect.height/2),size/2)
+        pygame.draw.circle(self.image,self.color,(int(self.rect.width/2),int(self.rect.height/2)),int(size/2))
         self.rect.centerx = x
         self.rect.centery = y
         self.maxspeed = 10
@@ -169,7 +169,7 @@ class Ball(pygame.sprite.Sprite):
         self.checkbounds()
 
     def draw(self):
-        pygame.draw.circle(self.image,self.color,(self.rect.width/2,self.rect.height/2),self.size/2)
+        pygame.draw.circle(self.image,self.color,(int(self.rect.width/2),int(self.rect.height/2)),int(self.size/2))
         screen.blit(self.image,self.rect)
 
 
