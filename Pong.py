@@ -109,7 +109,7 @@ class Paddle(pygame.sprite.Sprite):
 
     #A draw function which draws our paddle onto the screen
     def draw(self):
-        pygame.draw.rect(self.image,self.color,(0,0,self.sizex,self.sizey))
+        #pygame.draw.rect(self.image,self.color,(0,0,self.sizex,self.sizey))
         screen.blit(self.image,self.rect)
 
 """

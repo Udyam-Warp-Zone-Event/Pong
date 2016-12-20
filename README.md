@@ -22,6 +22,8 @@ To run this game:
 ##### Controls:
 * Move your Paddle, by pressing UP or DOWN key
 
+Watch the line by line video here : https://www.youtube.com/watch?v=dnynZHXfKkA&t=1529s
+
 ### Developed by: 
 Shivam Shekhar  
 Email: shivam.shekhar.ece14@itbhu.ac.in   
